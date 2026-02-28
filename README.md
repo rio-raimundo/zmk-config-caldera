@@ -1,0 +1,2 @@
+- Most of the setup for these files comes from https://zmk.dev/docs/development/hardware-integration/new-shield?keyboard-type=split
+- Another thing to note that I might forget is that it's important to lock the version number for ZMK, in my case at `v0.3`. This is done both in `.github/workflows/build.yml` and `west.yml`. In my case, the reason for this is that the `nice_nano_v2` keyboard seems to be removed in later versions, but I need this set in `build.yaml` for the files to flash correctly. 
